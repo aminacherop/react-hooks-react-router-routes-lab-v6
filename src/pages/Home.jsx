@@ -7,7 +7,7 @@ function Home() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:4000/movies") // <-- change to your correct port
+    fetch("http://localhost:4000/movies") 
       .then((response) => response.json())
       .then((data) => {
         console.log("Fetched data:", data);
